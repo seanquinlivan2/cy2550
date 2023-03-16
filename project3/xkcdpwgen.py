@@ -2,9 +2,9 @@ import sys
 import random
 #import urllib2
 from pathlib import Path
-f_path = Path("/home/seanquinlivan/Desktop/words.txt")
+f_path = Path("words.txt")
 
-f = open("/Users/seanquinlivan/Desktop/words.txt")
+f = open("words.txt")
 list = f.read().split()
 arguments = sys.argv
 wordCount = 4
