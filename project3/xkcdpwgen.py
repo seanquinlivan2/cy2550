@@ -28,7 +28,7 @@ if (arguments.count("-h")) :
 
 password = ""
 
-if caps > wordCount:
+if int(caps) > int(wordCount):
     caps = wordCount
 
 passwordList = random.sample(list,int(wordCount))
