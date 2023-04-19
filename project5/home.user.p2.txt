@@ -1,0 +1,25 @@
+# Last Modified: Tue Apr 18 16:59:54 2023
+abi <abi/3.0>,
+
+include <tunables/global>
+
+/home/seanquinlivan/Desktop/project5/p2 flags=(audit) {
+  include <abstractions/base>
+
+  /home/seanquinlivan/Desktop/project5/p2 mr,
+  /tmp/project* wr,
+  /home/seanquinlivan/.project2/config w,
+  /var/log/syslog r,
+  /etc/fstab r,
+  /proc/version r,
+  /proc/buddyinfo r,
+  /etc/crontab r,
+  /run/systemd/resolve/stub-resolv.conf  r,
+  /etc/passwd r,
+  /etc/hosts r,
+  /home/seanquinlivan/Desktop/project5/template r,
+  network tcp,
+  deny /proc/cpuinfo r,
+  deny /proc/meminfo r,
+
+}
